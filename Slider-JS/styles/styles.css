@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/yeseva-one');
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.completed-projects {
+    background-color: #131313;
+    padding-top: 107px;
+    padding-bottom: 125px;
+    position: relative;
+}
+
+.completed-container {
+    position: relative;
+    width: 1171px;
+    height: 552px;
+    margin-left: 135px;
+}
+
+.completed-column-one {
+    float: left;
+    width: 442px;
+}
+
+.completed-title {
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.completed-description {
+    margin: 34px 0px 0px 0px;
+    width: 442px;
+    height: 86px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: white;
+}
+
+.completed-characteristics {
+    margin: 42px 0px 0px 0px;
+    width: 400px;
+    overflow: hidden
+}
+
+.characteristics-column {
+    float: left;
+    width: 50%;
+}
+
+.completed-subtitle {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.completed-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: white;
+}
+
+.completed-column-two {
+    float: left;
+    width: 679px;
+    margin-left: 50px;
+}
+
+.completed-links {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.completed-link {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.completed-link.active {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+    cursor: pointer;
+}
+
+.completed-slider {
+    margin-top: 45px;
+    width: 679px;
+    height: 472px;
+    position: relative;
+}
+
+.completed-slider .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+
+.completed-slider .image.active {
+    opacity: 1;
+}
+
+.completed-nav-container {
+    padding: 0;
+    margin-top: 45px;
+    width: 206px;
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrows {
+    width: 42px;
+    height: 14px;
+    border: none;
+    background: #131313 no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    background-image: url('../images/arrow-left.svg');
+}
+
+.arrow-right {
+    background-image: url('../images/arrow-right.svg');
+}
+
+.completed-nav {
+    padding: 0;
+    width: 64px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed-nav-dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: #131313 no-repeat;
+    text-indent: -9999px;
+    background-image: url('../images/dot.svg');
+    cursor: pointer;
+}
+
+.completed-nav-dot.active {
+    background-image: url('../images/dot-selected.svg');
+}
+
+@media screen and (max-width: 1299px) {
+    
+    .container {
+        padding: 0px 18px;
+    }
+
+    .completed-projects {
+        padding: 0;
+    }
+
+    .completed-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 670px;
+        margin: auto;
+    }
+
+    .completed-column-one {
+        float: none;
+        width: 100%;
+    }
+
+    .completed-title {
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.07em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E3B873;
+    }
+
+    .completed-description {
+        margin: 11px auto 0px;
+        width: 100%;
+        height: 66px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 17px;
+        color: white;
+        text-align: center;
+    }
+
+    .completed-characteristics {
+        margin: 0px;
+        width: auto;
+    }
+
+    .completed-nav-container {
+        padding: 0;
+        margin: 20px auto 0px;
+        width: auto;
+        height: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .completed-column-two {
+        width: auto;
+        margin: 0px;
+    }
+
+    .completed-links {
+        display: none;
+    }
+
+    .completed-slider {
+        margin-top: 20px;
+        width: auto;
+        height: 236px;
+        position: relative;
+    }
+
+    .completed-slider .image {
+        background: contain no-repeat;
+    }
+}
